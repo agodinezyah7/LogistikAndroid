@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/relativeLayouts1">
+
+        <TextView
+            android:id="@+id/textView104S"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salida Manual"
+            android:textSize="@dimen/abc_select_dialog_padding_start_material"
+            android:layout_below="@id/textView103S"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+ 
+        
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/relativeLayouts2">
+        
+        <TextView
+            android:text="CODIGO = DESCRIPCION = CANTIDAD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView105S"
+            android:textColor="#0000FF"
+            android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="700dp"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewSalidaManual"
+            android:scrollbars="vertical | horizontal"/>
+    </RelativeLayout>
+    </HorizontalScrollView>
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayouts4">
+        <ImageButton
+                    android:src="@drawable/btnregresar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnRegresarSalidaM"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp" />
+        <ImageButton
+                    android:src="@drawable/inventario_normal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnReportSalida"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@+id/imgbtnRegresarSalidaM"
+                    android:layout_toRightOf="@+id/imgbtnRegresarSalidaM"
+                    android:gravity="center"
+                    android:visibility="invisible"/>
+        <ImageButton
+                    android:src="@drawable/guardar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnGuardarSalidaM"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@+id/imgbtnReportSalida"
+                    android:layout_toRightOf="@+id/imgbtnReportSalida" />
+        
+     </RelativeLayout>   
+</LinearLayout>
+
+

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+            android:text="TOMA DE INVENTARIO"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textViewTituloInv"
+            android:textColor="#DF7401"
+            android:textSize="24dp"
+            android:gravity="center_horizontal"/>
+      
+
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relativeLayouts1">
+        
+        <TextView
+            android:id="@+id/textViewInvCodigo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Código"/>
+        <EditText
+            android:id="@+id/editTextInvCodigo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/textViewInvCodigo"/>
+      
+        <TextView
+            android:id="@+id/textViewDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editTextInvCodigo"
+            android:text="Descripcion del producto"/>
+
+        <TextView
+            android:id="@+id/textViewInvTarima"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/textViewDescripcion"
+            android:text="Tarima"/>
+
+        <TextView
+            android:id="@+id/textViewInvTarimaRes"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textViewDescripcion"
+            android:layout_toRightOf="@+id/textViewInvTarima"
+            android:text="Rultado de Tarima"/>
+
+        <TextView
+            android:id="@+id/textViewCantidad"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Cantidad:"
+            android:layout_below="@+id/textViewInvTarima"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextInvCant"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/textViewInvTarimaRes"
+            android:layout_toRightOf="@id/textViewCantidad"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/textView101S"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Cajas"
+            android:layout_below="@+id/textViewCantidad"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextInvCajas"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/editTextInvCant"
+            android:layout_toRightOf="@id/textView101S"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffffff" />
+        <TextView
+            android:id="@+id/textView102S"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Pz/Caja"
+            android:layout_below="@+id/editTextInvCant"
+            android:layout_toRightOf="@+id/editTextInvCajas"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/editTextInvPzCaja"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/editTextInvCant"
+            android:layout_toRightOf="@id/textView102S"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffffff" />
+        
+        <TextView
+            android:id="@+id/textView103S"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Sueltas"
+            android:layout_below="@id/textView101S"
+            android:layout_marginTop="25dp"/>
+        <EditText
+            android:id="@+id/editTextInvSueltas"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/editTextInvCajas"
+            android:layout_toRightOf="@id/textView103S"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffffff" />
+        
+        <TextView
+            android:id="@+id/textView104S"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Defect."
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/textView102S"
+            android:layout_toRightOf="@+id/editTextInvCajas"
+           
+            android:layout_marginTop="25dp"/>
+        <EditText
+            android:id="@+id/editTextInvDefect"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/editTextInvPzCaja"
+            android:layout_toRightOf="@id/textView104S"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffffff" />
+        <TextView
+            android:id="@+id/LabelInfo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/imageView111"
+            android:layout_toRightOf="@+id/editTextInvDefect"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/relativeLayouts4">
+        <ImageButton
+                    android:src="@drawable/btnregresar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnRegresarInv"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp" />
+        <ImageButton
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnCancelarInv"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@+id/imgbtnRegresarInv"
+                    android:layout_toRightOf="@+id/imgbtnRegresarInv"
+                    android:gravity="center" />
+        <ImageButton
+                    android:src="@drawable/guardar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnGuardarInv"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@+id/imgbtnCancelarInv"
+                    android:layout_toRightOf="@+id/imgbtnCancelarInv" />
+         <TextView
+            android:id="@+id/textViewBtnRegresar"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="Regresar"/>
+
+         <TextView
+            android:id="@+id/textViewBtnCancelar"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_below="@+id/editTextInvCodigo"
+            android:layout_toRightOf="@+id/textViewBtnRegresar"
+            android:text="Cancelar"/>
+
+         <TextView
+            android:id="@+id/textViewBtnCambiar"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_below="@+id/editTextInvCodigo"
+            android:layout_toRightOf="@+id/textViewBtnCancelar"
+            android:text="Cambiar"/>
+     </RelativeLayout>   
+</LinearLayout>
+
+

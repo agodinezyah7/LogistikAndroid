@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:id="@+id/linearLayout1">
+         <TextView
+            android:text="PEDIDOS DE VENTA"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textViewTitulo"
+            android:textColor="#DF7401"
+            android:layout_marginLeft="100dp"/>
+        <TextView
+            android:text="ESTATUS = ORDEN = FECHA  = CLIENTE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPedido1"
+            android:textColor="#0000FF"
+            android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="700dp"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewPedidos"
+            android:scrollbars="vertical | horizontal"/>
+    </LinearLayout>
+        </HorizontalScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/relativeLayout1">
+        <ImageButton
+                    android:src="@drawable/btnregresar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnRegresarPedido"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp" />
+                <ImageButton
+                    android:src="@drawable/printer"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnsave"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@id/imgbtnRegresarPedido"
+                    android:layout_toRightOf="@id/imgbtnRegresarPedido"
+                    android:gravity="center" />
+                <ImageButton
+                    android:src="@drawable/siguiente_normal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnsiguiente"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@id/imgbtnsave"
+                    android:layout_toRightOf="@id/imgbtnsave" />
+    </RelativeLayout>
+
+</LinearLayout>

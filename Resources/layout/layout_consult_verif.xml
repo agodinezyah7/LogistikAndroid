@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:id="@+id/relativeLayouts1">
+        
+        <TextView
+            android:id="@+id/textViewTarimaCV"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Tarima"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextTarimaCV"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+             android:imeOptions="actionNext"
+            android:layout_toRightOf="@+id/textViewTarimaCV"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff" />
+        
+        <TextView
+            android:id="@+id/textView101CV"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Codigo"
+            android:layout_below="@+id/textViewTarimaCV"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextCodCV"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+             android:imeOptions="actionNext"
+            android:layout_below="@+id/editTextTarimaCV"
+            android:layout_toRightOf="@+id/textView101CV"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff" />
+        
+        <ImageView
+            android:src="@drawable/teclado"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageViewTecladoCV"
+            android:layout_below="@+id/editTextCodCV"
+            android:layout_toRightOf="@+id/editTextCodCV"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp" />
+        
+        <TextView
+            android:id="@+id/textViewUbicaCV"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Ubica"
+            android:layout_below="@id/textView101CV"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/editTextUbicaCV"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+             android:imeOptions="actionNext"
+            android:layout_below="@+id/editTextCodCV"
+            android:layout_toRightOf="@+id/textViewUbicaCV"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff" />
+        
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/relativeLayouts2">
+        
+        <TextView
+            android:text="UBICACION = TARIMA = CANTIDAD = CODIGO = DESCRIPCION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewMsgCF"
+            android:textColor="#0000FF"
+            android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="700dp"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewConsultaVerif"
+           android:scrollbars="vertical | horizontal"/>
+    </RelativeLayout>
+     </HorizontalScrollView>
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayouts4">
+        <ImageButton
+                    android:src="@drawable/btnregresar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnRegresarCV"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp" />
+
+        <ImageButton
+                    android:src="@drawable/printer"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnsiguienteCV"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_alignBottom="@+id/imgbtnRegresarCV"
+                    android:layout_toRightOf="@+id/imgbtnRegresarCV" />
+        
+     </RelativeLayout>   
+</LinearLayout>
+
+

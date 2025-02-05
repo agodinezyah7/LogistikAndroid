@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+ 
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu ReUbicar Producto"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"/>      
+  <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/ButtonSacarProd"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Sacar Producto de Tarima"
+            android:layout_marginRight="20dp"
+            android:background="#ff2196f3"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonProductos"
+            android:layout_toRightOf="@id/ButtonSacarProd"
+            android:text="Productos"
+            android:background="#ff2196f3"
+            android:paddingTop="22.5dp"
+            android:paddingBottom="22.5dp" />
+
+         <Button
+            android:id="@+id/ButtonMeterProd"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Meter Producto a Tarima"
+            android:layout_below="@id/ButtonSacarProd"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#ff2196f3"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+
+         <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonTarimaRE"
+            android:layout_toRightOf="@id/ButtonMeterProd"
+            android:layout_below="@id/ButtonProductos"
+            android:layout_marginTop="22dp"
+            android:text="Tarima"
+            android:background="#ff2196f3"
+            android:paddingTop="22.5dp"
+            android:paddingBottom="22.5dp" />
+
+         <Button
+            android:id="@+id/ButtonRegresarRE"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="regresar"
+            android:layout_below="@id/ButtonTarimaRE"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="140dp"
+            android:background="#ff2196f3"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+    
+         
+
+    </RelativeLayout>
+</LinearLayout>
+

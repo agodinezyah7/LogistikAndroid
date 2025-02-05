@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+<LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:id="@+id/linearLayout1">
+         <TextView
+            android:text="DETALLE PEDIDO DE VENTA"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textViewTitulo"
+            android:textColor="#DF7401"
+            android:layout_marginLeft="90dp"/>
+         
+        <TextView
+                android:text="Cant Rec. = Cant. Ped. = Codigo = Descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewDetallePed"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/relativeLayout1">
+        <ImageButton
+                    android:src="@drawable/btnregresar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnRegresarPedD1"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp" />
+                <ImageButton
+                    android:src="@drawable/guardar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnsave"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@id/imgbtnRegresarPedD1"
+                    android:layout_toRightOf="@id/imgbtnRegresarPedD1"
+                    android:gravity="center" />
+                <ImageButton
+                    android:src="@drawable/siguiente_normal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnsiguiente"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@id/imgbtnsave"
+                    android:layout_toRightOf="@id/imgbtnsave" />
+    </RelativeLayout>
+</LinearLayout>

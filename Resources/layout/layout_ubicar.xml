@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+ 
+   <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Ubicar Producto"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"/>
+   <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+        
+        <Button
+            android:id="@+id/ButtonProdenTarima"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Productos en Tarima"
+            android:layout_marginRight="20dp"
+            android:background="#ff2196f3"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonProdenUbicacion"
+            android:layout_toRightOf="@id/ButtonProdenTarima"
+            android:text="Productos en ubicacion"
+            android:background="#ff2196f3"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+            
+
+         <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonTarimaU"
+            android:layout_below="@id/ButtonProdenTarima"
+            android:layout_marginTop="22dp"
+            android:text="Tarima en ubicacion"
+            android:background="#ff2196f3"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+
+         <Button
+            android:id="@+id/ButtonRegresarU"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="regresar"
+            android:layout_below="@id/ButtonTarimaU"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="160dp"
+            android:background="#ff2196f3"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+    
+         
+
+    </RelativeLayout>
+</LinearLayout>

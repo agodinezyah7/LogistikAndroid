@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:id="@+id/relativeLayouts1">
+        
+        <TextView
+            android:id="@+id/textView102S"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Tarima"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/editTextTarimaUP"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/textView102S"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionNext"
+            android:textColor="#ffffffff" />
+        
+        <TextView
+            android:id="@+id/textView103S"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Código"
+            android:layout_below="@id/textView102S"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextCodUP"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+             android:imeOptions="actionNext"
+            android:layout_below="@id/editTextTarimaUP"
+            android:layout_toRightOf="@id/textView103S"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff" />
+        <ImageView
+            android:src="@drawable/teclado"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/imageView111"
+            android:layout_toRightOf="@+id/editTextCodUP"
+            android:layout_marginTop="10dp" />
+        
+        <TextView
+            android:id="@+id/textView104S"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Cantidad"
+            android:layout_below="@id/textView103S"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/editTextCantUP"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+             android:imeOptions="actionNext"
+            android:layout_below="@+id/editTextCodUP"
+            android:layout_toRightOf="@id/textView104S"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff" />
+        
+    </RelativeLayout>
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relativeLayouts2">
+        
+        <TextView
+            android:text="CODIGO = CANTIDAD = DESCRIPCION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView105S"
+            android:textColor="#0000FF"
+            android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewUbicar"
+            android:scrollbars="vertical"/>
+    </RelativeLayout>
+   
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayouts4">
+        <ImageButton
+                    android:src="@drawable/btnregresar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnRegresarUP"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp" />
+        <ImageButton
+                    android:src="@drawable/inventario_normal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnInventUP"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@+id/imgbtnRegresarUP"
+                    android:layout_toRightOf="@+id/imgbtnRegresarUP"
+                    android:gravity="center" />
+        <ImageButton
+                    android:src="@drawable/guardar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnTerminarUP"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignBottom="@+id/imgbtnInventUP"
+                    android:layout_toRightOf="@+id/imgbtnInventUP" />
+        
+     </RelativeLayout>   
+    <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/textViewNuevaTarina"
+         android:text="Nueva Tarima"
+         android:layout_marginLeft="120dp"/>
+</LinearLayout>

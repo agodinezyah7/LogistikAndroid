@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+     <TextView
+            android:id="@+id/textViewTituloRD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo"
+        android:textSize="24dp"
+            android:gravity="center_horizontal"/>
+
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:id="@+id/relativeLayouts1">
+        
+        <TextView
+            android:id="@+id/textViewTarimaRD"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Tarima"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextTarimaRD"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:layout_toRightOf="@+id/textViewTarimaRD"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+        
+        <TextView
+            android:id="@+id/textView101RD"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Codigo"
+            android:layout_below="@+id/textViewTarimaRD"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextCodRD"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:layout_below="@+id/editTextTarimaRD"
+            android:layout_toRightOf="@+id/textView101RD"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+        
+        
+        <TextView
+            android:id="@+id/textView103S"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Cant."
+            android:layout_below="@+id/textView101RD"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextCatRD"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:layout_below="@+id/editTextCodRD"
+            android:layout_toRightOf="@id/textView103S"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+        <ImageView
+            android:src="@drawable/teclado"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageViewTecladoRD"
+            android:layout_below="@+id/editTextCatRD"
+            android:layout_toRightOf="@+id/editTextCatRD"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp" />
+        
+        <TextView
+            android:id="@+id/textViewUbicaRD"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Ubica Destino"
+            android:layout_below="@id/textView103S"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/editTextUbicaDest"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+             android:imeOptions="actionNext"
+            android:layout_below="@+id/editTextCatRD"
+            android:layout_toRightOf="@+id/textViewUbicaRD"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff" />
+        
+    </RelativeLayout>
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/relativeLayouts2">
+        
+        <TextView
+            android:text="CODIGO = DESCRIPCION = CANTIDAD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView105S"
+            android:textColor="#0000FF"
+            android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewRD"
+            android:scrollbars="vertical"/>
+    </RelativeLayout>
+     
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayouts4">
+        <ImageButton
+                    android:src="@drawable/btnregresar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnRegresarRD"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp" />
+        <TextView
+                    android:text="Aguarde..."
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textviewMgs"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignBottom="@+id/imgbtnRegresarRD"
+                    android:layout_toRightOf="@+id/imgbtnRegresarRD"
+                    android:gravity="center"
+                    android:visibility="invisible"/>
+        <ImageButton
+                    android:src="@drawable/guardar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnsaveRD"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignBottom="@+id/textviewMgs"
+                    android:layout_toRightOf="@+id/textviewMgs" />
+        
+     </RelativeLayout>   
+</LinearLayout>
+
+

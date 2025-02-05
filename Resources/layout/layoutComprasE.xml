@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+        <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:id="@+id/linearLayout1">
+         <TextView
+            android:text="ORDENES DE COMPRA"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textViewTitulo"
+            android:textColor="#DF7401"
+            android:layout_marginLeft="100dp"/>
+        <TextView
+            android:text="ESTATUS = FECHA = ORDEN COMPRA = ID_PROVEEDOR = NOMBRE_PROVEEDOR = ALMACEN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="#0000FF"
+            android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="700dp"
+            android:layout_height="match_parent"
+            android:id="@+id/listView1"
+            android:scrollbars="vertical | horizontal"/>
+    </LinearLayout>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/relativeLayout1">
+        <ImageButton
+            android:src="@drawable/btnregresar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imgbtnRegresar"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bckbtnrounded"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:text="Total Ordenes: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#DF7401"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTotalItems7"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/imgbtnRegresar"
+            android:layout_toRightOf="@id/imgbtnRegresar"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVTotalItems7"
+            android:text="0"
+            android:digits="1234567890."
+            android:numeric="decimal"
+            android:inputType="numberDecimal"
+            android:enabled="false"
+            android:focusable="true"
+            android:layout_alignBottom="@id/txtTotalItems7"
+            android:layout_toRightOf="@id/txtTotalItems7"
+            android:layout_marginBottom="-10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

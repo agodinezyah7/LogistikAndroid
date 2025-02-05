@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+           <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salida de Producto"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/textViewCodigoPS"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="Codigo:"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextCodigoPS"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:layout_toRightOf="@+id/textViewCodigoPS"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff" />
+            <TextView
+            android:id="@+id/lblBox_producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion del producto"
+            android:layout_marginTop="10dp"/>
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:id="@+id/relativeLayouts1">
+        
+        <TextView
+            android:id="@+id/textViewUbicacionPS"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Ubicacion:"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextUbicacionPS"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:layout_toRightOf="@+id/textViewUbicacionPS"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff" />
+        
+        <TextView
+            android:id="@+id/textViewTarimaPS"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Tarima"
+            android:layout_below="@+id/textViewUbicacionPS"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextTarimaPS"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:layout_below="@+id/editTextUbicacionPS"
+            android:layout_toRightOf="@+id/textViewTarimaPS"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff" />
+        
+        <ImageView
+            android:src="@drawable/teclado"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageViewTecladoCV"
+            android:layout_below="@+id/editTextTarimaPS"
+            android:layout_toRightOf="@+id/editTextTarimaPS"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp" />
+        
+        <TextView
+            android:id="@+id/textViewCantPS"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Cantidad:"
+            android:layout_below="@+id/textViewTarimaPS"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/editTextCantPS"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#ff303f9f"
+            android:maxLength="20"
+            android:layout_below="@+id/editTextTarimaPS"
+            android:layout_toRightOf="@+id/textViewCantPS"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:inputType="numberDecimal"
+            android:focusable="true"
+            android:imeOptions="actionDone"
+            android:focusableInTouchMode="true"
+            android:textColor="#ffffffff" />
+         <TextView
+            android:id="@+id/lblCantSurtida"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/editTextTarimaPS"
+            android:layout_toRightOf="@+id/editTextCantPS"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/relativeLayouts2">
+        
+        <TextView
+            android:text="Cantidad = Ubicacion = Tarima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewMsgPS"
+            android:textColor="#0000FF"
+            android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewMsgPs"
+            android:scrollbars="vertical"/>
+    </RelativeLayout>
+           <TextView
+            android:id="@+id/lblTotalC"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="10dp"/>
+           <TextView
+            android:id="@+id/textViewPedidoPS"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Pedido:"
+            android:layout_toRightOf="@+id/lblTotalC"
+            android:layout_marginTop="10dp"/>
+     <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayouts4">
+        <ImageButton
+                    android:src="@drawable/btnregresar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnRegresarPS"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp" />
+        
+     </RelativeLayout>   
+</LinearLayout>
+
+

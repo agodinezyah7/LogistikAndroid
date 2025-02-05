@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+<LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:id="@+id/linearLayout1">
+         <TextView
+            android:text="DETALLE PEDIDO DE VENTA"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textViewTitulo"
+            android:textColor="#DF7401"
+            android:layout_marginLeft="90dp"/>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:id="@+id/relativeLayout2">
+            <TextView
+                android:text="Codigo:"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:id="@+id/textViewcodigo"
+                android:layout_below="@id/textViewTitulo"
+                android:textColor="#ff303f9f"
+                android:textSize="30px"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="#ff303f9f"
+                android:id="@+id/editTextCodigo"
+                android:maxLength="20"
+                android:layout_toRightOf="@id/textViewcodigo"
+                android:layout_below="@id/textViewTitulo"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffffff" 
+                android:inputType="text"/>
+            
+         </RelativeLayout>
+        <TextView
+                android:text="Ubic. = Cant. Surt. = Cant. Ped. = Codigo = Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewDetallePed2"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/relativeLayout1">
+        <ImageButton
+                    android:src="@drawable/btnregresar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnRegresarPedD2"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp" />
+                <ImageButton
+                    android:src="@drawable/siguiente_normal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgbtnsiguienteD2"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bckbtnrounded"
+                    android:padding="10dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_alignBottom="@id/imgbtnRegresarPedD2"
+                    android:layout_toRightOf="@id/imgbtnRegresarPedD2" />
+    </RelativeLayout>
+</LinearLayout>
