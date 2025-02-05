@@ -25,7 +25,7 @@ namespace BilddenLogistik.EFWorkBD
         public static int TipoProd = 0;
         //public static string cnSQL = @"data source=minimac\sqlexpress;initial catalog=LogistikMasterValvulerias06;user id=sa;password=Mexpym*01;Connect Timeout=600;MultipleActiveResultSets=true";
         //public static string cnSQL = @"data source=http://minimac01.ddns.net;initial catalog=LogistikMasterValvulerias06;user id=sa;password=Mexpym*01;Connect Timeout=600;MultipleActiveResultSets=true";
-        public static string cnSQL = @"data source=192.168.1.151,1433;initial catalog=LogistikMasterValvulerias06;user id=sa;password=Mexpym*01;Connect Timeout=600;MultipleActiveResultSets=true";
+        public static string cnSQL = @"data source=192.168.1.117,1433;initial catalog=LogistikMasterValvulerias06;user id=sa;password=Aspel2020$;Connect Timeout=600;MultipleActiveResultSets=true";
 
         //public static string cnSQL = @"data source=192.168.1.151,1433;initial catalog=LogistikMasterValvulerias06;user id=love;password=controlnet;Connect Timeout=600;MultipleActiveResultSets=true";
         //public static string cnSQL = @"data source=192.168.1.68,1433;initial catalog=LogistikMasterValvulerias06;user id=sa;password=controlnet;Connect Timeout=600;MultipleActiveResultSets=true";
